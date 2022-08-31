@@ -6,9 +6,11 @@ This is a very simple code for doing random crop an image but you can choose the
 
 # CODE
 
+
 from torchvision import transforms
 
 def NRandomCrop(img,size, N):
+
   '''
   @img : image for cropping
   @size: cropping size
@@ -16,6 +18,7 @@ def NRandomCrop(img,size, N):
   @return: list of N number of cropped images
 
   '''
+  
   tf = transforms.Compose(
         [transforms.RandomCrop(size), transforms.ToTensor()])
         

@@ -4,7 +4,7 @@ This is a very simple code for doing random crop an image but you can choose the
 
 
 
-#code
+# CODE
 
 from torchvision import transforms
 
@@ -28,7 +28,7 @@ def NRandomCrop(img,size, N):
   return lst_img
   
   
-  #Example
-  # N number of random crops
+  # Example
+  #N number of random crops
     train_set = transforms.Compose(
         [(lambda crops: NRandomCrop(crops, 256, 15)) # NRandomCrop(N,M,K), Here N= images, M=crop size, K= number of crops
